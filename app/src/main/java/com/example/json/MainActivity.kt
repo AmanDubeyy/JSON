@@ -26,8 +26,8 @@ class MainActivity : AppCompatActivity() {
 
         viewModel = ViewModelProvider(this)[CitiesViewModel::class.java]
 
-        //---------------------------FILL DB-----------------------
-        //viewModel.deleteAllCities()
+//        ---------------------------FILL DB-----------------------
+        viewModel.deleteAllCities()
         viewModel.getCitiesFromAPI()
 
         //---------------------------------SEARCH------------------------------------------
